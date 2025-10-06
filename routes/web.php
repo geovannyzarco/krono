@@ -31,4 +31,5 @@ Route::middleware(['auth'])->group(function () {
         ->name('two-factor.show');
 });
 
+include __DIR__.'/rutas.php';
 require __DIR__.'/auth.php';
