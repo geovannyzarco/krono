@@ -17,6 +17,15 @@
                 </flux:navlist.group>
                 <flux:navlist.group :heading="__('Administrador')" class="grid">
                     <flux:navlist.item icon="users" :href="route('grupos.index')" :current="request()->routeIs('grupos.index')" wire:navigate>{{ __('Grupos') }}</flux:navlist.item>
+                    <flux:navlist.item icon="tag" :href="route('categorias.index')" :current="request()->routeIs('categorias.index')" wire:navigate>{{ __('Categorias') }}</flux:navlist.item>
+                    <flux:navlist.item icon="clock" :href="route('horarios.index')" :current="request()->routeIs('horarios.index')" wire:navigate>{{ __('Horarios') }}</flux:navlist.item>
+                    <flux:navlist.item icon="flag" :href="route('estados.index')" :current="request()->routeIs('estados.index')" wire:navigate>{{ __('Estados') }}</flux:navlist.item>
+                    <flux:navlist.item icon="map" :href="route('divisiones.index')" :current="request()->routeIs('divisiones.index')" wire:navigate>{{ __('Divisiones') }}</flux:navlist.item>
+                    <flux:navlist.item icon="building-library" :href="route('unidades.index')" :current="request()->routeIs('unidades.index')" wire:navigate>{{ __('Unidades') }}</flux:navlist.item>
+                    <flux:navlist.item icon="user" :href="route('empleados.index')" :current="request()->routeIs('empleados.index')" wire:navigate>{{ __('Empleados') }}</flux:navlist.item>
+                    <flux:navlist.item icon="bookmark" :href="route('tipo_permisos.index')" :current="request()->routeIs('tipo_permisos.index')" wire:navigate>{{ __('Tipo permisos') }}</flux:navlist.item>
+                    <flux:navlist.item icon="document-text" :href="route('permisos.index')" :current="request()->routeIs('permisos.index')" wire:navigate>{{ __('Permisos') }}</flux:navlist.item>
+                    <flux:navlist.item icon="calendar-days" :href="route('compensados.index')" :current="request()->routeIs('compensados.index')" wire:navigate>{{ __('Compensados') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
